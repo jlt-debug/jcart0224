@@ -28,12 +28,25 @@
   </component>
   <component name="ProjectId" id="1YFSwUKPYnaTuFKYtNc271TFY5e" />
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/jlt/jcart/adminsteation/back/dto/in" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Idea\jcart-adminstration-back\src\main\java\com\jlt\jcart\adminsteation\back\dto\in" />
+      <recent name="E:\Idea\jcart-adminstration-back\src\main\java\com\jlt\jcart\adminsteation\back\dto\out" />
+      <recent name="E:\Idea\jcart-adminstration-back" />
+      <recent name="E:\Idea\jcart-adminstration-back\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,6 +60,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="JcartAdminstrationBackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="jcart-adminstration-back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jlt.jcart.adminsteation.back.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jlt.jcart.adminsteation.back.JcartAdminstrationBackApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.JcartAdminstrationBackApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -58,7 +91,8 @@
       <option name="presentableId" value="Default" />
       <updated>1582537087722</updated>
       <workItem from="1582537089068" duration="2873000" />
-      <workItem from="1582540265458" duration="2325000" />
+      <workItem from="1582540265458" duration="2563000" />
+      <workItem from="1582606556130" duration="14191000" />
     </task>
     <servers />
   </component>

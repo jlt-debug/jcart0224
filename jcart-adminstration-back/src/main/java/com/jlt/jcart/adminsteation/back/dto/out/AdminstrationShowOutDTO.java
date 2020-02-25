@@ -1,19 +1,27 @@
-package com.jlt.jcart.adminsteation.back.dto.in;
+package com.jlt.jcart.adminsteation.back.dto.out;
 
-public class AdminstrationUpdateProfileDTO {
+public class AdminstrationShowOutDTO {
 
-    private String realName;
+    private Integer adminstratorId;
+    private String username;
     private String email;
     private String avatarUrl;
-    private String password;
     private byte status;
 
-    public String getRealName() {
-        return realName;
+    public Integer getAdminstratorId() {
+        return adminstratorId;
     }
 
-    public void setRealName(String realName) {
-        this.realName = realName;
+    public void setAdminstratorId(Integer adminstratorId) {
+        this.adminstratorId = adminstratorId;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getEmail() {
@@ -30,14 +38,6 @@ public class AdminstrationUpdateProfileDTO {
 
     public void setAvatarUrl(String avatarUrl) {
         this.avatarUrl = avatarUrl;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public byte getStatus() {
