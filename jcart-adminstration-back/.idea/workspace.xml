@@ -34,7 +34,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/jlt/jcart/adminsteation/back/dto/in" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/com.jlt.jcart.adminstration.back.dao" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -42,10 +42,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Idea\jcart-adminstration-back\src\main\java\com\jlt\jcart\adminsteation\back\dto\in" />
-      <recent name="E:\Idea\jcart-adminstration-back\src\main\java\com\jlt\jcart\adminsteation\back\dto\out" />
-      <recent name="E:\Idea\jcart-adminstration-back" />
-      <recent name="E:\Idea\jcart-adminstration-back\src\main\resources" />
+      <recent name="E:\Idea\jcart-adminstration-back\src\main\resources\com.jlt.jcart.adminstration.back.dao" />
+      <recent name="E:\Idea\jcart-adminstration-back\src\main\java\com\jlt\jcart\adminstration\back\dao" />
+      <recent name="E:\Idea\jcart-adminstration-back\src\main\java\com\jlt\jcart\adminstration\back\po" />
+      <recent name="E:\Idea\jcart-adminstration-back\src\main\java\com\jlt\jcart\adminstration\back\exception" />
+      <recent name="E:\Idea\jcart-adminstration-back\src\main\java\com\jlt\jcart\adminstration\back\constant" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -65,11 +66,11 @@
       <module name="jcart-adminstration-back" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jlt.jcart.adminsteation.back.*" />
+          <option name="PATTERN" value="com.jlt.jcart.adminstration.back.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jlt.jcart.adminsteation.back.JcartAdminstrationBackApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jlt.jcart.adminstration.back.JcartAdminstrationBackApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,7 +93,9 @@
       <updated>1582537087722</updated>
       <workItem from="1582537089068" duration="2873000" />
       <workItem from="1582540265458" duration="2563000" />
-      <workItem from="1582606556130" duration="14191000" />
+      <workItem from="1582606556130" duration="15111000" />
+      <workItem from="1582699504168" duration="3923000" />
+      <workItem from="1582706493692" duration="247000" />
     </task>
     <servers />
   </component>
