@@ -1,7 +1,6 @@
 package com.jlt.jcart.adminstration.back.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.fasterxml.jackson.annotation.JsonAlias;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.jlt.jcart.adminstration.back.dao.ProductDetailMapper;
@@ -15,6 +14,8 @@ import com.jlt.jcart.adminstration.back.po.ProductDetail;
 import com.jlt.jcart.adminstration.back.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 
 import java.util.List;
 
@@ -60,6 +61,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    @Transactional
     public Integer create(ProductCreateInDTO productCreateInDTO) {
 
         Product product = new Product();
@@ -73,8 +75,8 @@ public class ProductServiceImpl implements ProductService {
         product.setRewordPoints(productCreateInDTO.getRewordPoints());
         product.setSortOrder(productCreateInDTO.getSortOrder());
         String description = productCreateInDTO.getDescription();
-        String substring = description.substring(0, Math.min(100, description.length()));
-        product.setProductAbstract(substring);
+        String productAbstract = description.substring(0, Math.min(100, description.length()));
+        product.setProductAbstract(productAbstract);
         productMapper.insertSelective(product);
 
         Integer productId = product.getProductId();
@@ -90,6 +92,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    @Transactional
     public void update(ProductUpdateInDTO productUpdateInDTO) {
         Product product = new Product();
         product.setProductId(productUpdateInDTO.getProductId());
@@ -115,12 +118,14 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    @Transactional
     public void delete(Integer productId) {
         productMapper.deleteByPrimaryKey(productId);
         productDetailMapper.deleteByPrimaryKey(productId);
     }
 
     @Override
+    @Transactional
     public void batchDelete(List<Integer> productIds) {
         productMapper.batchDelete(productIds);
         productDetailMapper.batchDelete(productIds);
