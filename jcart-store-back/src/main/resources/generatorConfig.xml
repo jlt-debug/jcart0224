@@ -19,8 +19,8 @@
 
         <!--数据库链接信息-->
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/dayi?serverTimezone=Asia/Shanghai" userId="root"
-                        password="123">
+                        connectionURL="jdbc:mysql://localhost:3306/jcart0224?serverTimezone=Asia/Shanghai" userId="root"
+                        password="123456">
         </jdbcConnection>
 
         <!-- 非必需，类型处理器，在数据库类型和java类型之间的转换控制-->
@@ -29,7 +29,7 @@
         </javaTypeResolver>
 
         <!--生成Model类存放位置-->
-        <javaModelGenerator targetPackage="com.jlt.jcart.store.back.po" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="io.cjf.jcartstoreback.po" targetProject="src/main/java">
             <!-- 是否对model添加 构造函数 -->
             <property name="constructorBased" value="false"/>
             <!-- 是否允许子包，即targetPackage.schemaName.tableName -->
@@ -41,7 +41,7 @@
         </javaModelGenerator>
 
         <!--生成映射文件存放位置-->
-        <sqlMapGenerator targetPackage="com.jlt.jcart.store.back.dao" targetProject="src/main/resources">
+        <sqlMapGenerator targetPackage="io.cjf.jcartstoreback.dao" targetProject="src/main/resources">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
@@ -51,7 +51,7 @@
                 type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
                 type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
         -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.jlt.jcart.store.back.dao" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="io.cjf.jcartstoreback.dao" targetProject="src/main/java">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 
