@@ -9,9 +9,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class AdministratorServiceImpl implements AdministratorService {
 
-   @Autowired
-   AdministratorMapper administratorMapper;
-
+    @Autowired
+    AdministratorMapper administratorMapper;
 
     @Override
     public Administrator getByUsername(String username) {

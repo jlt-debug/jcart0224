@@ -3,12 +3,12 @@ var app = new Vue({
     data: {
         productCode: '',
         productName: '',
+        productAbstract: '',
         price: '',
         discount: '',
         stockQuantity: '',
         rewordPoints: '',
         sortOrder: '',
-        productAbstract: '',
         description: '',
         selectedStatus: 1,
         selectedMainPic: '',
@@ -90,7 +90,7 @@ var app = new Vue({
                     })
                     .catch(function (error) {
                         console.log(error);
-                        alert('上床失败');
+                        alert('上传失败');
                     });
             });
 
@@ -100,6 +100,7 @@ var app = new Vue({
             axios.post('/product/create', {
                 productCode: this.productCode,
                 productName: this.productName,
+                productAbstract: this.productAbstract,
                 price: this.price,
                 discount: this.discount,
                 stockQuantity: this.stockQuantity,
@@ -107,7 +108,6 @@ var app = new Vue({
                 mainPicUrl: this.mainPicUrl,
                 rewordPoints: this.rewordPoints,
                 sortOrder: this.sortOrder,
-                productAbstract: this.productAbstract,
                 description: this.description,
                 otherPicUrls: this.otherPicUrls
             })

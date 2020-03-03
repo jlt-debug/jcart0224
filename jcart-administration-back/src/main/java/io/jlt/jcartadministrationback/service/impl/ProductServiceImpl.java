@@ -72,7 +72,6 @@ public class ProductServiceImpl implements ProductService {
         product.setSortOrder(productUpdateInDTO.getSortOrder());
         product.setProductAbstract(productUpdateInDTO.getProductAbstract());
         productMapper.updateByPrimaryKeySelective(product);
-
         ProductDetail productDetail = new ProductDetail();
         productDetail.setProductId(productUpdateInDTO.getProductId());
         productDetail.setDescription(productUpdateInDTO.getDescription());

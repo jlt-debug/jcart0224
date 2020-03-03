@@ -4,12 +4,12 @@ var app = new Vue({
         productId: '',
         productCode: '',
         productName: '',
+        productAbstract: '',
         price: '',
         discount: '',
         stockQuantity: '',
         rewordPoints: '',
         sortOrder: '',
-        productAbstract: '',
         description: '',
         selectedStatus: 1,
         selectedMainPic: '',
@@ -112,13 +112,13 @@ var app = new Vue({
                 productId: this.productId,
                 productName: this.productName,
                 price: this.price,
+                productAbstract:this.productAbstract,
                 discount: this.discount,
                 stockQuantity: this.stockQuantity,
                 status: this.selectedStatus,
                 mainPicUrl: this.mainPicUrl,
                 rewordPoints: this.rewordPoints,
                 sortOrder: this.sortOrder,
-                productAbstract: this.productAbstract,
                 description: this.description,
                 otherPicUrls: this.otherPicUrls
             })
@@ -142,6 +142,7 @@ var app = new Vue({
                     app.productId = product.productId;
                     app.productCode = product.productCode;
                     app.productName = product.productName;
+                    app.productAbstract = product.productAbstract;
                     app.price = product.price;
                     app.discount = product.discount;
                     app.stockQuantity = product.stockQuantity;
@@ -149,7 +150,6 @@ var app = new Vue({
                     app.rewordPoints = product.rewordPoints;
                     app.sortOrder = product.sortOrder;
                     app.mainPicUrl = product.mainPicUrl;
-                    app.productAbstract = product.productAbstract;
                     app.description = product.description;
                     app.otherPicUrls = product.otherPicUrls;
                 })
